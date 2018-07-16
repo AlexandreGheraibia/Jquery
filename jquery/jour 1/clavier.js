@@ -2,23 +2,23 @@
 var Clavier = {
     listKey : [],
 /*methode create de l'objet clavier*/
-		/*conteneurParent est égal à "ul" dansl'exemple*/
+		/*conteneurParent est Ã©gal Ã  "ul" dansl'exemple*/
     init : function(listKey,conteneurParent){
     
         this.listKey = listKey;
-				/* pour i allant de l'indice 0 à l'indice length-1
+				/* pour i allant de l'indice 0 Ã  l'indice length-1
         */
         for(var i = 0;i<this.listKey.length;i++)
         {
         		/*ci-dessous
-            on ajoute à ul
+            on ajoute Ã  ul
             la  li suiante
             <li id="' + this.listKey[i] + '"> this.listKey[i] +'</li>
-            ce qui est équivalent à 
+            ce qui est Ã©quivalent Ã  
             <li id="lettre a l'indice i de listKey">lettre a 									l'indice i de listKey</li>
             exemple! pour i =0;
-            this.listKey[0] est égale 'A'
-            le document HTML est equivalent à 
+            this.listKey[0] est Ã©gale 'A'
+            le document HTML est equivalent Ã  
             <ul><li id='A'>
             			A
             		</li>
@@ -26,10 +26,10 @@ var Clavier = {
             */
            $(conteneurParent).append('<li id="' + this.listKey[i] + '">'+ this.listKey[i] +'</li>');
 						/*ci-dessous
-            	revient à écrire pour i égal à 0
+            	revient Ã  Ã©crire pour i Ã©gal Ã  0
               $(ul #A).on('click'),funtion()....
               soir on recherche l'element contenu dans ul qui  
-              a pour identifiant donc id égal à A
+              a pour identifiant donc id Ã©gal Ã  A
               si on reformule on cherche la balise qui contient id='A'
               et on lui attribut un listenner surl'action clique.
               et une fonction anonyme qui fera le traitement (handler).
@@ -38,16 +38,16 @@ var Clavier = {
             $(conteneurParent+' #' + this.listKey[i]).on('click', function() {
             		/*$(input) dans la balise input
                 	$('input').val() valeur de la balise input
-                	$(this).text() est equialent à la $(conteneurParent.listKey[i]).text();
+                	$(this).text() est equialent Ã  la $(conteneurParent.listKey[i]).text();
                 	$(conteneurParent+' #'+listKey[i]) dans la balise qui est contenu dans la balise ul
                   je veux la balise qui a pour id='A' si i=0
                   donc on peut interpreter $(this).text();
-                  comme je eux le texte de la balise qui est contenu dans la balise  qui a un id ='A' si i=0
+                  comme je veux le texte de la balise qui est contenu dans la balise  qui a un id ='A' si i=0
                   et qui est contenu dans (ou descendant de )  la balise ul.
                   et donc la'instruction suiante dit: 
                   je veux que la valeur de la balise input soit remplacer par la valeur plus celle de la 
-                  la li (car elle  a l'id égal à 'A' pour i=0) contenu dans ul.
-                  donc a chaque click input accumule les valeurs cliquées à la souris 
+                  la li (car elle  a l'id Ã©gal Ã  'A' pour i=0) contenu dans ul.
+                  donc a chaque click input accumule les valeurs cliquÃ©es Ã  la souris 
                   */
                 $('input').val($('input').val() + $(this).text());
             }) 
