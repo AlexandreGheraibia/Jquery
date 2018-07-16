@@ -1,0 +1,15 @@
+ul{
+  display: flex;
+  /*repartitles elements sur plusieur
+  ligne*/
+  flex-flow: wrap;
+  width: 100%;
+}
+
+/*les descendants de ul qui sont des li*/
+ul li{
+  list-style-type: none;
+  padding: 5px;
+  border: 1px solid #000000;
+  background-color: #E1E1E1;
+}
