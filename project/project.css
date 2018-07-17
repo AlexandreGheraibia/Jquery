@@ -3,14 +3,14 @@
   padding:0;
 }
 
-#monSliderParent{
+#monProjectParent{
   padding:2px;
   height:300px;
   position:relative;
   overflow:hidden;
 
 }
-  #monSliderContent{
+  #monProjectContent{
     /*position dans la page*/
     position:absolute;
     top:0;
@@ -22,7 +22,7 @@
     transition:0.35s;
 
   }
-  #monSlidersArrows{
+  #monProjectArrows{
     position:relative;
     top:0;
     left:0;
@@ -36,19 +36,19 @@
   .slide{
     width: 25%;
   }
-  #monSliderSlide1{
+  #monProjectSlide1{
     background-color:red;
 
   }
-  #monSliderSlide2{
+  #monProjectSlide2{
     background-color:blue;
 
   }
-  #monSliderSlide3{
+  #monProjectSlide3{
     background-color:green;
 
   }
-  #monSliderSlide4{
+  #monProjectSlide4{
     background-color:yellow;
 
 }
