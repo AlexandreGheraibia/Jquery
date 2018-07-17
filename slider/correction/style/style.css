@@ -1,0 +1,99 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+.containerSlider {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    transition: height 1s;
+}
+.containerSlides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: left 1s;
+}
+.containerSlides .slide {
+    position: relative;
+    display: inline-block;
+}
+
+.containerSlides article.slide div.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0,0,0,1) 12%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%);
+}
+
+.containerSlides article.slide div.slidersContent {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 10%;
+}
+article.slide div.slidersContent h1 {
+    color: #FFFFFF;
+    font-size: 25pt;
+    text-shadow: 1px 1px 2px #000000;
+    font-family: 'Roboto', sans-serif;
+}
+article.slide div.slidersContent p.intro {
+    margin-top: 5%;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #000000;
+    font-family: 'Roboto', sans-serif;
+}
+article.slide div.slidersContent p.categ {
+    margin-bottom: 1.5%;
+    color: #fdcb2f;
+    text-shadow: 1px 1px 1px #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sliderCompteur {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -2%;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+}
+.sliderArrowNext {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -15pt;
+    color: #FFFFFF;
+    font-size: 30pt;
+    text-shadow: 0px 0px 4px #000000;
+    transition: 0.2s;
+}
+.sliderArrowPrev {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -15pt;
+    color: #FFFFFF;
+    font-size: 30pt;
+    transition: 0.2s;
+}
+.sliderArrowPrev:hover,
+.sliderArrowNext:hover {
+    color: #fdcb2f;
+    cursor: pointer;
+}

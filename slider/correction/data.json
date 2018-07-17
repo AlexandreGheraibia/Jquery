@@ -1,0 +1,23 @@
+[{
+  "categorie" : "Dans les salles",
+  "titre" : "Star Wars : Les Derniers Jedi arrive sur vos écrans",
+  "image" : "http://www.starwars-holonet.com/news/2017/20170524-starwars-8-dizaine-photos-vanity-fair-02.jpg",
+  "texte" : "Le dernier volet de la saga galactique arrive dans les salles obscures, et avec lui sont lot de promesses...",
+  "gradient" : "1",
+  "gradientColor" : "0,0,0"
+},
+  {
+    "categorie" : "Sorties DVD",
+    "titre" : "Wonder Woman se paye une galette",
+    "image" : "https://www.wellesley.edu/sites/default/files/assets/departments/summerschool/images/wonder-woman-1.jpg",
+    "texte" : "Wonder Womand revient dans vos salons pour distribuer des bourres pifs. Séance de rattrapage avant Justice League.",
+    "gradient" : "0"
+  },
+  {
+    "categorie" : "Bande-annonce",
+    "titre" : "Retour à Jurassic World",
+    "image" : "https://brightcove04pmdo-a.akamaihd.net/3653334524001/3653334524001_5211434752001_5211427352001-vs.jpg?pubId=3653334524001&videoId=5211427352001",
+    "texte" : "Gentil Dino, gentil Dino, dis-moi qui est le plus beau ?",
+    "gradient" : "1",
+    "gradientColor" : "23,45,34"
+  }]
