@@ -35,11 +35,7 @@ var Slider={
     self.actualPos=(self.nbSlides+self.actualPos+direction)%self.nbSlides;
     var nextPos=-(self.actualPos)*100+'%';
     $('#monSliderContent').css('left',nextPos);
-
-
   }
-
-
 }
 
 Slider.init('monSlider',4);
