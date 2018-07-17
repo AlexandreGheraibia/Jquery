@@ -60,8 +60,5 @@ var Clavier = {
     }
 }
 
-Clavier.keyBoardInit=function(){
-	
-};
 /*Clavier.create(['A','Z','E','R','T','Y','U','I','O','P', 'Q', 'H'],'ul');*/
 var clavierAzerty=Clavier.construct(['A','Z','E','R','T','Y','U','I','O','P', 'Q', 'H'],'ul');
