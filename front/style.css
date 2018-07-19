@@ -1,0 +1,78 @@
+*{padding:0;
+  margin: 0
+}/*supression des margin et padding*/
+
+/*il contient tout donc c'est sur lui que l'on joue
+pour pouvoir faire des choses sur les enfants
+*/
+
+#wrapper{
+  /*je veux que mes enfants soient en colonne*/
+  display:flex;
+  /*flex-flow
+  regroupe :
+    flex-wrap:wrap :affichage sur plusieurs lignes
+    flex direction:affiche les elemens sur une ligne ou sur des
+    colonne;
+  */
+  flex-wrap:wrap;
+  flex-direction:column;
+  background-color: blue;
+  width:97vw;
+  height:97vh;
+/*  padding: 5px;*/
+}
+
+#colonne{
+  display:flex;
+  width:15vw;
+  height:97vh;
+  color:white;
+  border:1px solid white;
+  background: linear-gradient(#8A2BE2,#000000);
+}
+
+#listMessages{
+
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(#8A2BE2,#000000 );
+  padding:5px;
+  width:100%;
+  height:100%;
+
+}
+
+#inputMessage{
+  display:flex;
+  flex-wrap:wrap;
+  background-color: #8A2BC2;
+  height:auto;
+  width:83vW;
+  padding: 5px;
+
+}
+#editBox{
+  display:flex;
+  width:83vW;
+}
+.message{
+  font-size-adjust: auto;
+  border-radius: 0px 10px 10px 10px;
+  word-wrap: break-word;
+  box-sizing:border-box;
+  background-color:rgba(255,255,255,0.9);
+  opacity:60%;
+  color: #8A2BE2;
+  padding:5px;
+  margin-left:5px;
+  border: 1px solid white;
+  width:auto;
+  height:auto;
+  min-height: 15vh;
+  max-width:85%;
+
+
+}
