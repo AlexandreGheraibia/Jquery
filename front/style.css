@@ -60,12 +60,12 @@ pour pouvoir faire des choses sur les enfants
 }
 .message{
   font-size-adjust: auto;
-  border-radius: 0px 10px 10px 10px;
+  border-radius: 0px 10px 0px 10px;
   word-wrap: break-word;
   box-sizing:border-box;
-  background-color:rgba(255,255,255,0.9);
+  background-color:rgba(0,148,240,0.5);
   opacity:60%;
-  color: #8A2BE2;
+  color: white;
   padding:5px;
   margin-left:5px;
   border: 1px solid white;
